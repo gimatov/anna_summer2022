@@ -4,10 +4,12 @@
 
 #include "Squad.h"
 
-Squad::Squad() {
-    this->criminals = new vector<Criminal>;
-}
+Squad::Squad() = default;
 
 void Squad::addCriminal(Criminal *criminal) {
-    this->criminals->push_back(*criminal);
+    this->criminals.push_back(criminal);
+}
+
+vector<Criminal *> Squad::gitCriminals() {
+    return this->criminals;
 }

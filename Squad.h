@@ -2,8 +2,8 @@
 // Created by kp on 10.07.2022.
 //
 
-#ifndef ANNASUMMER2022_SQUAD_H
-#define ANNASUMMER2022_SQUAD_H
+#ifndef SUMMER2022_SQUAD_H
+#define SUMMER2022_SQUAD_H
 
 #include <vector>
 
@@ -12,11 +12,12 @@
 using namespace std;
 
 class Squad {
-    vector<Criminal> *criminals;
+    vector<Criminal*> criminals;
 public:
     Squad();
     void addCriminal(Criminal* criminal);
+    vector<Criminal*> gitCriminals();
 };
 
 
-#endif //ANNASUMMER2022_SQUAD_H
+#endif //SUMMER2022_SQUAD_H

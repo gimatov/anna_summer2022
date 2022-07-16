@@ -2,8 +2,8 @@
 // Created by kp on 10.07.2022.
 //
 
-#ifndef ANNASUMMER2022_CRIMINAL_H
-#define ANNASUMMER2022_CRIMINAL_H
+#ifndef SUMMER2022_CRIMINAL_H
+#define SUMMER2022_CRIMINAL_H
 
 #include <string>
 #include <map>
@@ -23,13 +23,13 @@ enum class CriminalProperty {
     BirthPlace,
     LastPlace,
     CriminalProfession,
-    LastCase
+    LastCase,
+    SpecialFeatures,
+    Languages
 };
 
 class Criminal {
-    map<CriminalProperty, string> properies;
-    vector<string> SpecialFeatures;
-    vector<string> Languages;
+    map<CriminalProperty, string> properties;
 
 public:
     Criminal(
@@ -44,14 +44,16 @@ public:
             string birthPlace,
             string lastPlace,
             string criminalProfession,
-            string lastCase
+            string lastCase,
+            string specialFeatures,
+            string languages
     );
 
     static CriminalProperty strToProperty(const string& s);
 
     string getValue(string param);
-    bool eqValue(string param, string value);
+    bool eqValue(const string& param, const string& value);
 };
 
 
-#endif //ANNASUMMER2022_CRIMINAL_H
+#endif //SUMMER2022_CRIMINAL_H

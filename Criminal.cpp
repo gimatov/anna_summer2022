@@ -20,20 +20,24 @@ Criminal::Criminal(
         string birthPlace,
         string lastPlace,
         string criminalProfession,
-        string lastCase
+        string lastCase,
+        string specialFeatures,
+        string languages
 ) {
-    this->properies[CriminalProperty::Surname]            = move(surname);
-    this->properies[CriminalProperty::Name]               = move(name);
-    this->properies[CriminalProperty::Nickname]           = move(nickname);
-    this->properies[CriminalProperty::Height]             = move(height);
-    this->properies[CriminalProperty::DateOfBirth]        = move(dateOfBirth);
-    this->properies[CriminalProperty::HairColor]          = move(hairColor);
-    this->properies[CriminalProperty::Citizenship]        = move(citizenship);
-    this->properies[CriminalProperty::BirthPlace]         = move(birthPlace);
-    this->properies[CriminalProperty::LastPlace]          = move(lastPlace);
-    this->properies[CriminalProperty::CriminalProfession] = move(criminalProfession);
-    this->properies[CriminalProperty::LastCase]           = move(lastCase);
-    this->properies[CriminalProperty::EyeColor]           = move(eyeColor);
+    this->properties[CriminalProperty::Surname]            = move(surname);
+    this->properties[CriminalProperty::Name]               = move(name);
+    this->properties[CriminalProperty::Nickname]           = move(nickname);
+    this->properties[CriminalProperty::Height]             = move(height);
+    this->properties[CriminalProperty::DateOfBirth]        = move(dateOfBirth);
+    this->properties[CriminalProperty::HairColor]          = move(hairColor);
+    this->properties[CriminalProperty::Citizenship]        = move(citizenship);
+    this->properties[CriminalProperty::BirthPlace]         = move(birthPlace);
+    this->properties[CriminalProperty::LastPlace]          = move(lastPlace);
+    this->properties[CriminalProperty::CriminalProfession] = move(criminalProfession);
+    this->properties[CriminalProperty::LastCase]           = move(lastCase);
+    this->properties[CriminalProperty::EyeColor]           = move(eyeColor);
+    this->properties[CriminalProperty::SpecialFeatures]    = move(specialFeatures);
+    this->properties[CriminalProperty::Languages]          = move(languages);
 
 }
 
@@ -62,6 +66,14 @@ CriminalProperty Criminal::strToProperty(const string& s) {
         return CriminalProperty::LastCase;
     if (s == "EyeColor")
         return CriminalProperty::EyeColor;
+    if (s == "SpecialFeatures")
+        return CriminalProperty::SpecialFeatures;
+    if (s == "Languages")
+        return CriminalProperty::Languages;
 
     return CriminalProperty::Surname;
+}
+
+bool Criminal::eqValue(const string& param, const string& value) {
+    return this->properties[Criminal::strToProperty(param)] == value;
 }
