@@ -3,11 +3,10 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "UnitCriminalWindow.h"
-#include "UnitGangSquadWindow.h"
-#include "UnitAddGangSquadWindow.h"
-#include "UnitAddCriminalWindow.h"
-#include "UnitSearchCriminalWindow.h"
+#include "UnitDBWindow.h"
+#include "UnitAddCriminalAndSquadWindow.h"
+#include "UnitSearchWindow.h"
+#include "UnitArchiveWindow.h"
 #include "UnitHelp.h"
 
 #include "UnitMainWindow.h"
@@ -21,24 +20,24 @@ __fastcall TMainWindow::TMainWindow(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TMainWindow::Button1Click(TObject *Sender)
+{
+  ArchiveWindow->Show();
+}
+//---------------------------------------------------------------------------
 void __fastcall TMainWindow::Button2Click(TObject *Sender)
 {
-  GangSquadWindow->Show();
+  DBWindow->Show();
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainWindow::Button3Click(TObject *Sender)
 {
-  AddGangSquadWindow->Show();
+  AddCriminalAndSquadWindow->Show();
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainWindow::Button4Click(TObject *Sender)
 {
-  AddCriminalWindow->Show();
-}
-//---------------------------------------------------------------------------
-void __fastcall TMainWindow::Button1Click(TObject *Sender)
-{
-  CriminalWindow->Show();
+  SearchWindow->Show();
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainWindow::Button5Click(TObject *Sender)
