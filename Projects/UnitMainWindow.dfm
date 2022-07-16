@@ -1546,8 +1546,8 @@ object MainWindow: TMainWindow
     ParentFont = False
   end
   object Button1: TButton
-    Left = 16
-    Top = 448
+    Left = 17
+    Top = 464
     Width = 193
     Height = 49
     Caption = #1041#1072#1079#1072' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1086#1074
@@ -1561,8 +1561,8 @@ object MainWindow: TMainWindow
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 49
-    Top = 567
+    Left = 17
+    Top = 551
     Width = 192
     Height = 49
     Caption = #1041#1072#1079#1072' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1086#1082
@@ -1577,7 +1577,7 @@ object MainWindow: TMainWindow
   end
   object Button3: TButton
     Left = 440
-    Top = 448
+    Top = 464
     Width = 209
     Height = 49
     Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1082#1091
@@ -1591,8 +1591,8 @@ object MainWindow: TMainWindow
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 416
-    Top = 567
+    Left = 440
+    Top = 551
     Width = 209
     Height = 49
     Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
@@ -1606,8 +1606,8 @@ object MainWindow: TMainWindow
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 240
-    Top = 496
+    Left = 232
+    Top = 464
     Width = 177
     Height = 49
     Caption = #1055#1086#1080#1089#1082' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
@@ -1618,6 +1618,21 @@ object MainWindow: TMainWindow
     Font.Style = []
     ParentFont = False
     TabOrder = 4
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 232
+    Top = 551
+    Width = 177
+    Height = 49
+    Caption = #1055#1086#1084#1086#1097#1100
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Lucida Sans Unicode'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
     OnClick = Button5Click
   end
 end
