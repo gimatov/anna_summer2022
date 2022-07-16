@@ -27,6 +27,8 @@ int main() {
             "b",
             "b"
     ));
+
+    tempDB->find("Name", "Petya")->find("Height", "140")->get();
     
     return 0;
 }
