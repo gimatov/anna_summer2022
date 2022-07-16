@@ -8,6 +8,7 @@
 #include "UnitAddGangSquadWindow.h"
 #include "UnitAddCriminalWindow.h"
 #include "UnitSearchCriminalWindow.h"
+#include "UnitHelp.h"
 
 #include "UnitMainWindow.h"
 //---------------------------------------------------------------------------
@@ -42,6 +43,6 @@ void __fastcall TMainWindow::Button1Click(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TMainWindow::Button5Click(TObject *Sender)
 {
-  SearchCriminalWindow->Show();
+  HelpWindow->Show();
 }
 //---------------------------------------------------------------------------
