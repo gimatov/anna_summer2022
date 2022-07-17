@@ -5308,3 +5308,4 @@ object AddGangSquadWindow: TAddGangSquadWindow
     TabOrder = 1
   end
 end
+
