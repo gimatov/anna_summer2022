@@ -4,13 +4,12 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("UnitAddGangSquadWindow.cpp", AddGangSquadWindow);
-USEFORM("UnitAddCriminalWindow.cpp", AddCriminalWindow);
-USEFORM("UnitCriminalWindow.cpp", CriminalWindow);
-USEFORM("UnitSearchCriminalWindow.cpp", SearchCriminalWindow);
+USEFORM("UnitDBWindow.cpp", DBWindow);
+USEFORM("UnitAddCriminalAndSquadWindow.cpp", AddCriminalAndSquadWindow);
+USEFORM("UnitSearchWindow.cpp", SearchWindow);
 USEFORM("UnitMainWindow.cpp", MainWindow);
-USEFORM("UnitGangSquadWindow.cpp", GangSquadWindow);
 USEFORM("UnitHelp.cpp", HelpWindow);
+USEFORM("UnitArchiveWindow.cpp", ArchiveWindow);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -19,12 +18,11 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TMainWindow), &MainWindow);
-         Application->CreateForm(__classid(TCriminalWindow), &CriminalWindow);
-         Application->CreateForm(__classid(TGangSquadWindow), &GangSquadWindow);
-         Application->CreateForm(__classid(TAddGangSquadWindow), &AddGangSquadWindow);
-         Application->CreateForm(__classid(TAddCriminalWindow), &AddCriminalWindow);
-         Application->CreateForm(__classid(TSearchCriminalWindow), &SearchCriminalWindow);
+         Application->CreateForm(__classid(TDBWindow), &DBWindow);
+         Application->CreateForm(__classid(TAddCriminalAndSquadWindow), &AddCriminalAndSquadWindow);
+         Application->CreateForm(__classid(TSearchWindow), &SearchWindow);
          Application->CreateForm(__classid(THelpWindow), &HelpWindow);
+         Application->CreateForm(__classid(TArchiveWindow), &ArchiveWindow);
          Application->Run();
 	}
 	catch (Exception &exception)
