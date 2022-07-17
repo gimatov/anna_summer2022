@@ -10,9 +10,7 @@
 TAddCriminalAndSquadWindow *AddCriminalAndSquadWindow;
 //---------------------------------------------------------------------------
 __fastcall TAddCriminalAndSquadWindow::TAddCriminalAndSquadWindow(TComponent* Owner)
-	: TForm(Owner)
+    : TForm(Owner)
 {
-
 }
 //---------------------------------------------------------------------------
-

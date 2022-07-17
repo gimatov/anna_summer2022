@@ -4,12 +4,12 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
+USEFORM("UnitArchiveWindow.cpp", ArchiveWindow);
 USEFORM("UnitDBWindow.cpp", DBWindow);
-USEFORM("UnitAddCriminalAndSquadWindow.cpp", AddCriminalAndSquadWindow);
 USEFORM("UnitSearchWindow.cpp", SearchWindow);
 USEFORM("UnitMainWindow.cpp", MainWindow);
 USEFORM("UnitHelp.cpp", HelpWindow);
-USEFORM("UnitArchiveWindow.cpp", ArchiveWindow);
+USEFORM("UnitAddCriminalAndSquadWindow.cpp", AddCriminalAndSquadWindow);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -19,10 +19,10 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TMainWindow), &MainWindow);
          Application->CreateForm(__classid(TDBWindow), &DBWindow);
-         Application->CreateForm(__classid(TAddCriminalAndSquadWindow), &AddCriminalAndSquadWindow);
          Application->CreateForm(__classid(TSearchWindow), &SearchWindow);
          Application->CreateForm(__classid(THelpWindow), &HelpWindow);
          Application->CreateForm(__classid(TArchiveWindow), &ArchiveWindow);
+         Application->CreateForm(__classid(TAddCriminalAndSquadWindow), &AddCriminalAndSquadWindow);
          Application->Run();
 	}
 	catch (Exception &exception)

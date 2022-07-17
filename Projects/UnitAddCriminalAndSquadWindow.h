@@ -12,15 +12,15 @@
 class TAddCriminalAndSquadWindow : public TForm
 {
 __published:	// IDE-managed Components
-	TLabel *Label1;
-	TStringGrid *StringGrid1;
-	TButton *Button1;
-    TLabel *Label2;
-    TStringGrid *StringGrid2;
-    TButton *Button2;
+    TLabel *LabelBaseCr;
+    TLabel *Label1;
+    TButton *ArchiveButton;
+    TButton *Button1;
+    TStringGrid *StringGrid1;
+    TStringGrid *DBSquadGreed;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TAddCriminalAndSquadWindow(TComponent* Owner);
+    __fastcall TAddCriminalAndSquadWindow(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TAddCriminalAndSquadWindow *AddCriminalAndSquadWindow;
