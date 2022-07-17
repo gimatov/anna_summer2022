@@ -2,8 +2,8 @@ object GangSquadWindow: TGangSquadWindow
   Left = 0
   Top = 0
   Caption = 'GangSquadWindow'
-  ClientHeight = 633
-  ClientWidth = 672
+  ClientHeight = 753
+  ClientWidth = 782
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

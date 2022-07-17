@@ -2,8 +2,8 @@ object MainWindow: TMainWindow
   Left = 0
   Top = 0
   Caption = #1048#1085#1090#1077#1088#1087#1086#1083
-  ClientHeight = 633
-  ClientWidth = 672
+  ClientHeight = 709
+  ClientWidth = 813
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,8 +13,8 @@ object MainWindow: TMainWindow
   PixelsPerInch = 96
   TextHeight = 15
   object Label1: TLabel
-    Left = 40
-    Top = 25
+    Left = 88
+    Top = 8
     Width = 596
     Height = 34
     Caption = 'International Criminal Police Organization'
@@ -26,8 +26,8 @@ object MainWindow: TMainWindow
     ParentFont = False
   end
   object Image1: TImage
-    Left = 40
-    Top = 132
+    Left = 112
+    Top = 100
     Width = 553
     Height = 293
     Center = True
@@ -1533,8 +1533,8 @@ object MainWindow: TMainWindow
     Proportional = True
   end
   object Label2: TLabel
-    Left = 224
-    Top = 81
+    Left = 464
+    Top = 65
     Width = 220
     Height = 22
     Caption = 'made by: Fomina Anna'
@@ -1545,94 +1545,79 @@ object MainWindow: TMainWindow
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object Button1: TButton
-    Left = 17
-    Top = 464
-    Width = 193
-    Height = 49
-    Caption = #1041#1072#1079#1072' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1086#1074
-    Font.Charset = ANSI_CHARSET
+  object Button2: TButton
+    Left = 168
+    Top = 527
+    Width = 473
+    Height = 50
+    Caption = #1041#1072#1079#1099' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1086#1074' '#1080' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1086#1082
+    Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -20
     Font.Name = 'Lucida Sans Unicode'
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = Button2Click
   end
-  object Button2: TButton
-    Left = 17
-    Top = 551
-    Width = 192
+  object Button3: TButton
+    Left = 168
+    Top = 414
+    Width = 473
     Height = 49
-    Caption = #1041#1072#1079#1072' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1086#1082
+    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072' '#1080#1083#1080' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1082#1091
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -20
     Font.Name = 'Lucida Sans Unicode'
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    OnClick = Button2Click
+    OnClick = Button3Click
   end
-  object Button3: TButton
-    Left = 440
-    Top = 464
-    Width = 209
-    Height = 49
-    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1082#1091
+  object Button4: TButton
+    Left = 168
+    Top = 469
+    Width = 473
+    Height = 52
+    Caption = #1055#1086#1080#1089#1082' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -20
     Font.Name = 'Lucida Sans Unicode'
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    OnClick = Button3Click
-  end
-  object Button4: TButton
-    Left = 440
-    Top = 551
-    Width = 209
-    Height = 49
-    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -17
-    Font.Name = 'Lucida Sans Unicode'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 3
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 232
-    Top = 464
-    Width = 177
-    Height = 49
-    Caption = #1055#1086#1080#1089#1082' '#1087#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
-    Font.Charset = RUSSIAN_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -17
-    Font.Name = 'Lucida Sans Unicode'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 4
-    OnClick = Button5Click
-  end
-  object Button6: TButton
-    Left = 232
-    Top = 551
-    Width = 177
+    Left = 168
+    Top = 638
+    Width = 473
     Height = 49
     Caption = #1055#1086#1084#1086#1097#1100
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -17
+    Font.Height = -20
     Font.Name = 'Lucida Sans Unicode'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 3
     OnClick = Button5Click
+  end
+  object Button1: TButton
+    Left = 168
+    Top = 583
+    Width = 473
+    Height = 49
+    Caption = #1040#1088#1093#1080#1074
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Lucida Sans Unicode'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button1Click
   end
 end

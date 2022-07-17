@@ -1,7 +1,7 @@
 object HelpWindow: THelpWindow
   Left = 0
   Top = 0
-  Caption = #1055#1086#1084#1086#1097#1100
+  Caption = 'Help'
   ClientHeight = 633
   ClientWidth = 672
   Color = clBtnFace
@@ -15,8 +15,8 @@ object HelpWindow: THelpWindow
   object StaticText1: TStaticText
     Left = 40
     Top = 48
-    Width = 577
-    Height = 505
+    Width = 61
+    Height = 19
     Caption = 'StaticText1'
     TabOrder = 0
   end
