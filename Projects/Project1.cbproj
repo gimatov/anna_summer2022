@@ -74,12 +74,10 @@
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <BCC_PCHName_Clang>Project1PCH1.h</BCC_PCHName_Clang>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <PackageImports>adortl;appanalytics;bcbie;bcbsmp;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindcompvclsmp;bindcompvclwinx;bindengine;CloudService;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapNativeClient;DataSnapProviderClient;DataSnapServer;DataSnapServerMidas;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;dsnap;dsnapcon;dsnapxml;emsclient;emsclientfiredac;emsedge;emshosting;emsserverresource;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACCommonODBC;FireDACDb2Driver;FireDACDBXDriver;FireDACDSDriver;FireDACIBDriver;FireDACInfxDriver;FireDACMongoDBDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;FireDACTDataDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;tethering;vcl;vclactnband;vcldb;vcldsnap;vcledge;vclFireDAC;vclie;vclimg;VCLRESTComponents;VclSmp;vcltouch;vclwinx;vclx;xmlrtl;$(PackageImports)</PackageImports>
         <IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
-        <BCC_PCHName_Clang>Project1PCH1.h</BCC_PCHName_Clang>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
@@ -144,29 +142,23 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
-        <CppCompile Include="UnitAddCriminalWindow.cpp">
-            <Form>AddCriminalWindow</Form>
+        <CppCompile Include="UnitAddCriminalAndSquadWindow.cpp">
+            <Form>AddCriminalAndSquadWindow</Form>
             <FormType>dfm</FormType>
-            <DependentOn>UnitAddCriminalWindow.h</DependentOn>
+            <DependentOn>UnitAddCriminalAndSquadWindow.h</DependentOn>
             <BuildOrder>6</BuildOrder>
         </CppCompile>
-        <CppCompile Include="UnitAddGangSquadWindow.cpp">
-            <Form>AddGangSquadWindow</Form>
+        <CppCompile Include="UnitArchiveWindow.cpp">
+            <Form>ArchiveWindow</Form>
             <FormType>dfm</FormType>
-            <DependentOn>UnitAddGangSquadWindow.h</DependentOn>
-            <BuildOrder>5</BuildOrder>
+            <DependentOn>UnitArchiveWindow.h</DependentOn>
+            <BuildOrder>13</BuildOrder>
         </CppCompile>
-        <CppCompile Include="UnitCriminalWindow.cpp">
-            <Form>CriminalWindow</Form>
+        <CppCompile Include="UnitDBWindow.cpp">
+            <Form>DBWindow</Form>
             <FormType>dfm</FormType>
-            <DependentOn>UnitCriminalWindow.h</DependentOn>
+            <DependentOn>UnitDBWindow.h</DependentOn>
             <BuildOrder>3</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="UnitGangSquadWindow.cpp">
-            <Form>GangSquadWindow</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>UnitGangSquadWindow.h</DependentOn>
-            <BuildOrder>4</BuildOrder>
         </CppCompile>
         <CppCompile Include="UnitHelp.cpp">
             <Form>HelpWindow</Form>
@@ -180,19 +172,18 @@
             <DependentOn>UnitMainWindow.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
-        <CppCompile Include="UnitSearchCriminalWindow.cpp">
-            <Form>SearchCriminalWindow</Form>
+        <CppCompile Include="UnitSearchWindow.cpp">
+            <Form>SearchWindow</Form>
             <FormType>dfm</FormType>
-            <DependentOn>UnitSearchCriminalWindow.h</DependentOn>
+            <DependentOn>UnitSearchWindow.h</DependentOn>
             <BuildOrder>7</BuildOrder>
         </CppCompile>
-        <FormResources Include="UnitAddGangSquadWindow.dfm"/>
-        <FormResources Include="UnitAddCriminalWindow.dfm"/>
-        <FormResources Include="UnitCriminalWindow.dfm"/>
-        <FormResources Include="UnitSearchCriminalWindow.dfm"/>
+        <FormResources Include="UnitDBWindow.dfm"/>
+        <FormResources Include="UnitAddCriminalAndSquadWindow.dfm"/>
+        <FormResources Include="UnitSearchWindow.dfm"/>
         <FormResources Include="UnitMainWindow.dfm"/>
-        <FormResources Include="UnitGangSquadWindow.dfm"/>
         <FormResources Include="UnitHelp.dfm"/>
+        <FormResources Include="UnitArchiveWindow.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -221,9 +212,9 @@
                 </Source>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName=".\Win32\Debug\Project1.tds" Configuration="Debug" Class="DebugSymbols">
+                <DeployFile LocalName=".\Win32\Debug\Project1.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>Project1.tds</RemoteName>
+                        <RemoteName>Project1.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -277,9 +268,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\Project1.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName=".\Win32\Debug\Project1.tds" Configuration="Debug" Class="DebugSymbols">
                     <Platform Name="Win32">
-                        <RemoteName>Project1.exe</RemoteName>
+                        <RemoteName>Project1.tds</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1084,10 +1075,10 @@
                 </DeployClass>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
